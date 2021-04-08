@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Describe this page." />
+    <title>Rhys Reader</title>
+    
+
+    
+    <link rel="stylesheet" href="p2style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    
+    </style>
+  <body>
+    <nav class="top"><div>// Rhys-Reader //</div></nav>
+    
+    <!-- Slideshow HTML -->
+    <nav>
+      <!-- Bird moving-->
+  <img src="../assets/bird.png" id='i1' 
+  style="position:absolute; left: 65%; top: 20%;width: 7%;">
+<div id='msg' style="height: 0px;"></div>
+<!-- End of Bird Moving-->
+
+
+      <!-- Peek Area-->
+    <div class="wrapper">
+      
+  </div>
+  <div class="container">
+    <div  id="txt" id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/CoverBlank2.png" style="width:100%">
+    </div>
+  
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page01.png" style="width:100%">
+    </div>
+  
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page02.png" style="width:100%">
+    </div>
+      
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page03.png" style="width:100%">
+    </div>
+  
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page04.png" style="width:100%">
+    </div>
+      
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page05.png" style="width:100%">
+    </div>
+  
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page06.png" style="width:100%">
+    </div>
+
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page07.png" style="width:100%">
+    </div>
+  
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page08Blank.png" style="width:100%">
+    </div>
+  
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page09.png" style="width:100%">
+    </div>
+      
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page10.png" style="width:100%">
+    </div>
+  
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page11-12.png" style="width:100%">
+    </div>   
+  
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page13.png" style="width:100%">
+    </div>
+
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page14.png" style="width:100%">
+    </div>
+
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page15.png" style="width:100%">
+    </div>
+
+    <div  id="txt" class="mySlides">
+      
+      <img src="../assets/LittleBlueTruck/Page16Blank.png" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)" style="text-align: left;">❮</a>
+    <a class="next" onclick="plusSlides(1)" style="text-align: right;">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/CoverBlank2.png" style="width:100%" onclick="currentSlide(1)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page01.png" style="width:100%" onclick="currentSlide(2)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page02.png" style="width:100%" onclick="currentSlide(3)"  >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page03.png" style="width:100%" onclick="currentSlide(4)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page04.png" style="width:100%" onclick="currentSlide(5)" >
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page05.png" style="width:100%" onclick="currentSlide(6)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page06.png" style="width:100%" onclick="currentSlide(7)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page07.png" style="width:100%" onclick="currentSlide(8)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page08Blank.png" style="width:100%" onclick="currentSlide(9)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page09.png" style="width:100%" onclick="currentSlide(10)"  >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page10.png" style="width:100%" onclick="currentSlide(11)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page11-12.png" style="width:100%" onclick="currentSlide(12)" >
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page13.png" style="width:100%" onclick="currentSlide(13)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page14.png" style="width:100%" onclick="currentSlide(14)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page15.png" style="width:100%" onclick="currentSlide(15)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../assets/LittleBlueTruck/Page16Blank.png" style="width:100%" onclick="currentSlide(16)" >
+      </div>
+    </div>
+  </div>
+      
+      
+    </nav>
+    
+      <!-- End of Slideshow HTML --> 
+     
+      
+      
+  <article>  
+    <div><img src="omaOpaThumbnail.png" style="width: 16%; position: absolute; top: 20%; left: 76%;"></div>
+    <div><img src="rhysThumbnail.png" style="width: 12%; position: absolute; top: 47%; left: 77%;"></div>   
+    
+  <div>
+    <!-- https://favpng.com/download/weYZFGhs 
+    https://favpng.com/download/VngXwUUg-->
+    
+    <video id="localVideo" autoplay muted style="width: 20%; height: 28%; position: absolute; top: 14%; left: 74%; padding: 10px; border-radius: 2px; border-width: 2px; border-style: dotted; border-color: rgb(250, 235, 215);"></video>
+    <video id="remoteVideo" autoplay style="width: 20%; height: 28%; position: absolute; top: 44%; left: 74%; padding: 10px; border-radius: 2px; border-width: 2px; border-style: dotted; border-color: rgb(240, 248, 255);"></video>
+  </div>
+  
+  <div style="padding-top: 7.5%;">
+    <button class="callbutton" id="btn-client1" style="background-image: linear-gradient(to right, #ad3700 5%,  #e68200 100%); text-align: center; position: absolute; top: 75%; left: 74%; width: 7%; height: 14%;">OMA/OPA</button>
+    <button class="callbutton" id="btn-client2" style="background-image: linear-gradient(to right, #00b7c4 10%, #17f5fd 100%); text-align: center; position: absolute; top: 75%; left: 87%; width: 7%; height: 14%;">RHYS</button>
+    <!-- https://www.pngwing.com/en/free-png-zaybd/download-->
+    <button class="callbutton" id="btn-call" style="text-align: center; position: absolute; top: 75%; left: 81%; width: 6%; height: 14%;">
+      <img src="../assets/ButtonImages/call.png" style="width:100%; "></button>
+  </div>
+    <div id="msgDiv"></div>
+
+    
+    
+  </article>
+  
+  
+  </body>
+  <footer class="footerLeft">
+    <h2>BOOK BUTTONS</h2>
+
+
+
+    
+    <!-- https://www.soundfishing.eu/download.php?id=633-->
+    <audio id="beep"></audio>
+    <button id="beep1Button" onclick="PlayBeep()" class="button beepOne">
+      Beep!
+      <img src="../assets/ButtonImages/beep.png" style="width: 50%;">
+      <!-- https://www.flaticon.com/free-icon/horn_891039?term=horn&page=1&position=51&page=1&position=51&related_id=891039&origin=search-->
+      <img style="position: absolute; left: 1%; top: 25%; width: 35%" src = "" id = "img">
+    </button>
+
+    <!-- https://www.soundfishing.eu/download.php?id=633-->
+    <audio id="beep"></audio>
+    <button id="beep2Button"onclick="PlayBeep2()" class="button beepTwo">
+      Beep!
+      <img src="../assets/ButtonImages/beep.png" style="width: 50%;">
+      <!-- https://www.flaticon.com/free-icon/horn_891039?term=horn&page=1&position=51&page=1&position=51&related_id=891039&origin=search-->
+      <img style="position: absolute; left: 47%; top: 43%; width: 17%;" src = "" id = "beepTwo">
+    </button>
+
+    <!-- SOUND: https://www.soundfishing.eu/download.php?id=102-->
+    <audio id="croak"></audio>
+    <button id="croak1Button"onclick="PlayCroak()" class="button croakOne">
+      Croak!
+      <!-- https://www.flaticon.com/free-icon/frog_1663170?term=frog&page=1&position=12&page=1&position=12&related_id=1663170&origin=search -->
+      <img src="../assets/ButtonImages/croak.png" style="width:50%">
+      <!-- https://www.flaticon.com/free-icon/horn_891039?term=horn&page=1&position=51&page=1&position=51&related_id=891039&origin=search-->
+      <img style="position: absolute; left: 52%; top: 38%; width: 8%;" src = "" id = "croakOne">
+    </button>
+
+    <!-- SOUND: https://www.soundfishing.eu/download.php?id=134-->
+    <audio id="baaa"></audio>
+    <button id="baaa1Button" onclick="PlayBaaa()" class="button baaaOne">
+      Baaa!
+      <!-- https://www.flaticon.com/free-icon/sheep_3570616?term=sheep&page=1&position=1&page=1&position=1&related_id=3570616&origin=search -->
+      <img src="../assets/ButtonImages/baaa.png" style="width:50%">
+      <img style="position: absolute; left: 13%; top: 43%; width: 8%;" src = "" id = "baaaOne">
+    </button>
+
+    <!-- SOUND: https://www.soundfishing.eu/download.php?id=146-->
+    <audio id="moo"></audio>
+    <button id="moo1Button" onclick="PlayMoo()" class="button mooOne">
+      Moo!
+      <!-- https://www.flaticon.com/free-icon/cow_2395796?term=cow&page=1&position=2&page=1&position=2&related_id=2395796&origin=search -->
+      <img src="../assets/ButtonImages/moo.png" style="width:50%">
+      <img style="position: absolute; left: 8%; top: 34%; width: 32%;" src = "" id = "mooOne">
+    </button>
+
+    <!-- SOUND: https://www.zapsplat.com/music/human-grunting-like-a-pig/-->
+    <audio id="oink"></audio>
+    <button id="oink1Button" onclick="PlayOink()" class="button oinkOne">
+      Oink!
+      <!-- https://www.flaticon.com/free-icon/pig_2194807?term=pig&page=1&position=1&page=1&position=1&related_id=2194807&origin=search -->
+      <img src="../assets/ButtonImages/oink.png" style="width:50%">
+      <img style="position: absolute; left: 39%; top: 47%; width: 10%;" src = "" id = "oinkOne">
+    </button>
+
+    <!-- https://www.soundfishing.eu/download.php?id=633-->
+    <audio id="beep"></audio>
+    <button id="beep3Button" onclick="PlayBeep3()" class="button beepThree">
+      Beep!
+      <img src="../assets/ButtonImages/beep.png" style="width: 50%;">
+      <!-- https://www.flaticon.com/free-icon/horn_891039?term=horn&page=1&position=51&page=1&position=51&related_id=891039&origin=search-->
+      <img style="position: absolute; left: 43%; top: 33%; width: 26%;" src = "" id = "beepThree">
+    </button>
+   
+    <!-- SOUND: https://www.soundfishing.eu/download.php?id=4980/-->
+    <audio id="cluck"></audio>
+    <button id="cluck1Button" onclick="PlayCluck()" class="button cluckOne">
+      Cluck!
+      <!-- https://www.flaticon.com/free-icon/hen_1864499?term=chicken&page=1&position=2&page=1&position=2&related_id=1864499&origin=search -->
+      <img src="../assets/ButtonImages/cluck.png" style="width:50%">
+      <img style="position: absolute; left: 58%; top: 37%; width: 6%;" src = "" id = "cluckOne">
+    </button>
+
+    <!-- SOUND: -->
+    <audio id="peep"></audio>
+    <button id="peep1Button" onclick="PlayPeep()" class="button peepOne">
+      Peep!
+      <!-- https://www.flaticon.com/free-icon/chick_789473?term=chick&page=1&position=6&page=1&position=6&related_id=789473&origin=search  -->
+      <img src="../assets/ButtonImages/peep.png" style="width:50%">
+      <img style="position: absolute; left: 58.5%; top: 42%; width: 3%;" src = "" id = "peepOne">
+    </button>
+
+    <!-- SOUND: https://www.soundfishing.eu/download.php?id=93-->
+    <audio id="maaa"></audio>
+    <button id="maaa1Button" onclick="PlayMaaa()" class="button maaaOne">
+      Maaa!
+      <!-- https://www.flaticon.com/free-icon/goat_1998662?term=goat&page=1&position=2&page=1&position=2&related_id=1998662&origin=search -->
+      <img src="../assets/ButtonImages/maaa.png" style="width:50%">
+      <img style="position: absolute; left: 58%; top: 31%; width: 6%;" src = "" id = "maaaOne">
+    </button>
+
+    <!-- https://www.soundfishing.eu/download.php?id=633-->
+    <audio id="beep"></audio>
+    <button id="beep4Button" onclick="PlayBeep4()" class="button beepFour">
+      Beep!
+      <img src="../assets/ButtonImages/beep.png" style="width: 50%;">
+      <!-- https://www.flaticon.com/free-icon/horn_891039?term=horn&page=1&position=51&page=1&position=51&related_id=891039&origin=search-->
+      <img style="position: absolute; left: 6%; top: 11%; width: 25%;" src = "" id = "beepFour">
+    </button>
+
+    <!-- SOUND: https://www.soundfishing.eu/download.php?id=87 -->
+    <audio id="neigh"></audio>
+    <button id="neigh1Button" onclick="PlayNeigh()" class="button neighOne">
+      Neigh!
+      <!-- https://www.flaticon.com/free-icon/horse-full-body-cartoon-variant-facing-the-left-direction_33867?term=horse&page=1&position=2&page=1&position=2&related_id=33867&origin=search -->
+      <img src="../assets/ButtonImages/neigh.png" style="width:50%">
+      <img style="position: absolute; left: 55%; top: 15%; width: 11%;" src = "" id = "neighOne">
+    </button>
+
+    <!-- SOUND: https://www.soundfishing.eu/download.php?id=820-->
+    <audio id="quack"></audio>
+    <button id="quack1Button" onclick="PlayQuack()" class="button quackOne">
+      Quack!
+      <!-- https://www.flaticon.com/free-icon/rubber-duck_1012677?term=duck&page=1&position=5&page=1&position=5&related_id=1012677&origin=search -->
+      <img src="../assets/ButtonImages/quack.png" style="width:50%">
+      <img style="position: absolute; left: 62%; top: 20%; width: 8%;" src = "" id = "quackOne">
+    </button>
+
+    <!-- SOUND: -->
+    <audio id="honk"></audio>
+    <button id="honk1Button" onclick="PlayHonk()" class="button honkOne">
+      Honk!
+      <!-- https://www.flaticon.com/free-icon/frontal-truck_45882?term=truck&page=1&position=23&page=1&position=23&related_id=45882&origin=search  -->
+      <img src="../assets/ButtonImages/honk.png" style="width:50%">
+      <img style="position: absolute; left: 23%; top: -10%; width: 54%;" src = "" id = "honkOne">
+    </button>
+
+    <!-- SOUND: 
+    REMOVE IMAGE CIRCLE -->
+    <audio id="rooom"></audio>
+    <button id="rooom1Button" onclick="PlayRooom()" class="button rooomOne">
+      Rooom!
+      <!-- https://www.flaticon.com/free-icon/racing_1023757?term=tyres&page=1&position=7&page=1&position=7&related_id=1023757&origin=search  -->
+      <img src="../assets/ButtonImages/rooom.png" style="width:50%">
+      <img style="position: absolute; left: 18%; top: 0%; width: 37%;" src = "" id = "rooomOne">
+    </button>
+
+    <!-- SOUND: 
+    REMOVE IMAGE CIRCLE -->
+    <audio id="smack"></audio>
+    <button id="smack1Button" onclick="PlaySmack()" class="button smackOne">
+      Smack!
+      <!-- https://www.flaticon.com/free-icon/racing_1023757?term=tyres&page=1&position=7&page=1&position=7&related_id=1023757&origin=search  -->
+      <img src="../assets/ButtonImages/smack.png" style="width:50%">
+      <img style="position: absolute; left: 18%; top: 0%; width: 37%;" src = "" id = "smackOne">
+    </button>
+
+    <!-- SOUND: -->
+    <audio id="honk"></audio>
+    <button id="honk2Button" onclick="PlayHonk2()" class="button honkTwo">
+      Honk!
+      <!-- https://www.flaticon.com/free-icon/frontal-truck_45882?term=truck&page=1&position=23&page=1&position=23&related_id=45882&origin=search  -->
+      <img src="../assets/ButtonImages/honk.png" style="width:50%">
+      <img style="position: absolute; left: -2%; top: -10%; width: 55%;" src = "" id = "honkTwo">
+    </button>
+
+    <!-- SOUND: https://soundbible.com/1120-Bounce.html
+    REMOVE PICTURE -->
+    <audio id="bump"></audio>
+    <button id="bump1Button" onclick="PlayBump()" class="button bumpOne">
+      Bump!
+      <!-- http://flaticon.com/free-icon/bump_187390?term=bump&page=1&position=8&page=1&position=8&related_id=187390&origin=search -->
+      <img src="../assets/ButtonImages/bump.png" style="width:50%">
+      <img style="position: absolute; left: 25%; top: -5%; width: 55%;" src = "" id = "bumpOne">
+    </button>
+
+    <!-- Change audio to 3 times and picture to 3 horns maybe change audio overall -->
+    <!-- https://www.soundfishing.eu/download.php?id=633-->
+    <audio id="beepThreeTimes"></audio>
+    <button id="beepBeepBeepButton" onclick="PlayBeepBeepBeep()" class="button beepBeepBeep">
+      Beepx3
+      <img src="../assets/ButtonImages/beep.png" style="width: 50%;">
+      <!-- https://www.flaticon.com/free-icon/horn_891039?term=horn&page=1&position=51&page=1&position=51&related_id=891039&origin=search-->
+      <img style="position: absolute; left: 39%; top: 13%; width: 41%;" src = "" id = "beepBeepBeep">
+    </button>
+
+    <!-- https://www.soundfishing.eu/download.php?id=633-->
+    <audio id="beep"></audio>
+    <button id="beep6Button" onclick="PlayBeep6()" class="button beepSix">
+      Beep!
+      <img src="../assets/ButtonImages/beep.png" style="width: 50%;">
+      <!-- https://www.flaticon.com/free-icon/horn_891039?term=horn&page=1&position=51&page=1&position=51&related_id=891039&origin=search-->
+      <img style="position: absolute; left: 50%; top: 45%; width: 18%;" src = "" id = "beepSix">
+    </button>
+
+    <!-- https://www.soundfishing.eu/download.php?id=633-->
+    <audio id="all"></audio>
+    <button id="allButton" onclick="PlayAll()" class="button all">
+      All
+      <!-- https://freepngimg.com/nature/tree-->
+      <img src="../assets/ButtonImages/all.png" style="width: 50%;">
+      <!-- https://www.flaticon.com/free-icon/horn_891039?term=horn&page=1&position=51&page=1&position=51&related_id=891039&origin=search-->
+      <img style="position: absolute; left: 50%; top: 45%; width: 18%;" src = "" id = "al">
+    </button>
+    
+
+    
+    
+
+  </footer>
+
+
+  <footer class="footerRight">
+    <h2>RHYS ATTRACT</h2>
+
+        <!-- bird moving -->
+        <audio id="beep"></audio>
+        <button onclick="PlayBirdSong()" class="button buttonPage" type="button" id="txt2" value='Start'><img src="turn.png" style="width:10%">Page-Change Indicator</button>
+
+        <!-- Shake it Button-->
+
+
+    <audio id="ukulele"></audio>
+    <button onclick="PlayUkulele()" class="button buttonResize button3">
+      
+      <!-- https://www.flaticon.com/free-icon/ukelele_2990502?term=ukulele&page=1&position=2&page=1&position=2&related_id=2990502&origin=search-->
+      <img src="../assets/ButtonImages/ukulele.png" style="width:40%">
+    </button>
+
+    <audio id="bell"></audio>
+    <button onclick="PlayBell()" class="button buttonResize button4">
+      
+      <!-- https://www.flaticon.com/free-icon/christmas-bell_4471286?term=bell&page=1&position=7&page=1&position=7&related_id=4471286&origin=search-->
+      <img src="../assets/ButtonImages/bell.png" style="width:40%">
+    </button>
+
+    <audio id="chimes"></audio>
+    <button onclick="PlayChimes()" class="button buttonResize button5">
+      
+      <!-- https://www.flaticon.com/free-icon/chime_1987055?term=chimes&page=1&position=1&page=1&position=1&related_id=1987055&origin=search-->
+      <img src="../assets/ButtonImages/chimes.png" style="width:40%">
+    </button>
+
+    <audio id="squeak"></audio>
+    <button onclick="PlaySqueak()" class="button buttonResize button6">
+      
+      <!-- https://www.flaticon.com/free-icon/dog-toy_2730459?term=dog%20toy&page=1&position=16&page=1&position=16&related_id=2730459&origin=search-->
+      <img src="../assets/ButtonImages/squeak.png" style="width:40%">
+    </button>
+
+    <audio id="crinkle"></audio>
+    <button onclick="PlayCrinkle()" class="button buttonResize button1">
+      
+      <!-- https://www.stickpng.com/img/download/5c434c10e39d5d01c21da943 -->
+      <img src="../assets/ButtonImages/crinkle.png" style="width:40%">
+    </button>
+  </footer>
+
+  <!-- Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./p2.js"> </script>/
+  <script>
+    /*var horn = new Audio();
+    horn.src = "horn.mp3"
+    function PlayHorn() {
+      horn.play();
+    }*/
+
+    
+
+    var beep = new Audio();
+    beep.src = "beep.mp3"
+    function PlayBeep() {
+      beep.play();
+      document.getElementById("img").src = "../assets/Circles/beepOne.gif";
+      setTimeout(function(){document.getElementById("img").style.display="none"}, 8000);
+    }
+    
+
+    var beep2 = new Audio();
+    beep2.src = "beep.mp3"
+    function PlayBeep2() {
+      beep2.play();
+      document.getElementById("beepTwo").src = "../assets/Circles/beepTwo.gif";
+      setTimeout(function(){document.getElementById("beepTwo").style.display="none"}, 8000);
+    }
+
+    var croak = new Audio();
+    croak.src = "croak.mp3"
+    function PlayCroak() {
+      croak.play();
+      document.getElementById("croakOne").src = "../assets/Circles/croakOne.gif";
+      setTimeout(function(){document.getElementById("croakOne").style.display="none"}, 8000);
+    }
+
+    var baaa = new Audio();
+    baaa.src = "baaa.mp3"
+    function PlayBaaa() {
+      baaa.play();
+      document.getElementById("baaaOne").src = "../assets/Circles/baaaOne.gif";
+      setTimeout(function(){document.getElementById("baaaOne").style.display="none"}, 8000);
+    }
+
+    var moo = new Audio();
+    moo.src = "moo.mp3"
+    function PlayMoo() {
+      moo.play();
+      document.getElementById("mooOne").src = "../assets/Circles/mooOne.gif";
+      setTimeout(function(){document.getElementById("mooOne").style.display="none"}, 8000);
+    }
+
+    var oink = new Audio();
+    oink.src = "oink.mp3"
+    function PlayOink() {
+      oink.play();
+      document.getElementById("oinkOne").src = "../assets/Circles/oinkOne.gif";
+      setTimeout(function(){document.getElementById("oinkOne").style.display="none"}, 8000);
+    }
+
+    var beep3 = new Audio();
+    beep3.src = "beep.mp3"
+    function PlayBeep3() {
+      beep3.play();
+      document.getElementById("beepThree").src = "../assets/Circles/beepThree.gif";
+      setTimeout(function(){document.getElementById("beepThree").style.display="none"}, 8000);
+    }
+
+    var cluck = new Audio();
+    cluck.src = "cluck.mp3"
+    function PlayCluck() {
+      cluck.play();
+      document.getElementById("cluckOne").src = "../assets/Circles/cluckOne.gif";
+      setTimeout(function(){document.getElementById("cluckOne").style.display="none"}, 8000);
+    }
+
+/*https://soundbible.com/1240-Baby-Chicks.html*/
+    var peep = new Audio();
+    peep.src = "peep.mp3"
+    function PlayPeep() {
+      peep.play();
+      document.getElementById("peepOne").src = "../assets/Circles/peepOne.gif";
+      setTimeout(function(){document.getElementById("peepOne").style.display="none"}, 8000);
+    }
+
+    var maaa = new Audio();
+    maaa.src = "maaa.mp3"
+    function PlayMaaa() {
+      maaa.play();
+      document.getElementById("maaaOne").src = "../assets/Circles/maaaOne.gif";
+      setTimeout(function(){document.getElementById("maaaOne").style.display="none"}, 8000);
+    }
+
+    var beep4 = new Audio();
+    beep4.src = "beep.mp3"
+    function PlayBeep4() {
+      beep4.play();
+      document.getElementById("beepFour").src = "../assets/Circles/beepFour.gif";
+      setTimeout(function(){document.getElementById("beepFour").style.display="none"}, 8000);
+    }
+
+    var neigh = new Audio();
+    neigh.src = "neigh.mp3"
+    function PlayNeigh() {
+      neigh.play();
+      document.getElementById("neighOne").src = "../assets/Circles/neighOne.gif";
+      setTimeout(function(){document.getElementById("neighOne").style.display="none"}, 8000);
+    }
+
+    var quack = new Audio();
+    quack.src = "quack.mp3"
+    function PlayQuack() {
+      quack.play();
+      document.getElementById("quackOne").src = "../assets/Circles/quackOne.gif";
+      setTimeout(function(){document.getElementById("quackOne").style.display="none"}, 8000);
+    }
+
+    
+
+    /*https://soundbible.com/1450-Air-Horn.html */
+    var honk = new Audio();
+    honk.src = "honk.mp3"
+    function PlayHonk() {
+      honk.play();
+      document.getElementById("honkOne").src = "../assets/Circles/honkOne.gif";
+      setTimeout(function(){document.getElementById("honkOne").style.display="none"}, 8000);
+    }
+
+    /* https://soundbible.com/153-Car-Skidding.html */
+    var rooom = new Audio();
+    rooom.src = "rooom.mp3"
+    function PlayRooom() {
+      rooom.play();
+    }
+
+    /* https://soundbible.com/1418-Sharp-Punch.html */
+    var smack = new Audio();
+    smack.src = "smack.mp3"
+    function PlaySmack() {
+      smack.play();
+    }
+
+    var honk = new Audio();
+    honk.src = "honk.mp3"
+    function PlayHonk2() {
+      honk.play();
+      document.getElementById("honkTwo").src = "../assets/Circles/honkTwo.gif";
+      setTimeout(function(){document.getElementById("honkTwo").style.display="none"}, 8000);
+    }
+
+    var bump = new Audio();
+    bump.src = "bump.mp3"
+    function PlayBump() {
+      bump.play();
+    }
+
+    var beepBeepBeepOne = new Audio();
+    beepBeepBeepOne.src = "beepBeepBeep.mp3"
+    function PlayBeepBeepBeep() {
+      beepBeepBeepOne.play();
+      document.getElementById("beepBeepBeep").src = "../assets/Circles/beepBeepBeep.gif";
+      setTimeout(function(){document.getElementById("beepBeepBeep").style.display="none"}, 8000);
+    }
+
+    var beep5 = new Audio();
+    beep5.src = "beep.mp3"
+    function PlayBeep5() {
+      beep5.play();
+      document.getElementById("beepFive").src = "../assets/Circles/beepFive.gif";
+      setTimeout(function(){document.getElementById("beepFive").style.display="none"}, 8000);
+    }
+
+    var beep6 = new Audio();
+    beep6.src = "beep.mp3"
+    function PlayBeep6() {
+      beep6.play();
+      document.getElementById("beepSix").src = "../assets/Circles/beepSix.gif";
+      setTimeout(function(){document.getElementById("beepSix").style.display="none"}, 8000);
+    }
+
+    var all = new Audio();
+    all.src = "all.mp3"
+    function PlayAll() {
+      all.play();
+      document.getElementById("all").src = "../assets/Circles/all.gif";
+      setTimeout(function(){document.getElementById("all").style.display="none"}, 8000);
+    }
+
+    
+
+
+    var crinkle = new Audio();
+    crinkle.src = "crinkle.mp3"
+    function PlayCrinkle() {
+      crinkle.play();
+    }
+
+    
+
+    
+    var ukulele = new Audio();
+    ukulele.src = "ukulele.mp3"
+    function PlayUkulele() {
+      ukulele.play();
+      document.getElementById("img2").src = "../assets/circle3dup3loop.gif";
+    }
+    
+
+    var bell = new Audio();
+    bell.src = "bell.mp3"
+    function PlayBell() {
+      bell.play();
+    }
+
+    var chimes = new Audio();
+    chimes.src = "chimes.mp3"
+    function PlayChimes() {
+      chimes.play();
+    }
+
+    var squeak = new Audio();
+    squeak.src = "squeak1.mp3"
+    function PlaySqueak() {
+      squeak.play();
+    }
+
+  
+
+    
+
+    
+    
+  </script>
+  <!-- Slideshow Script -->
+  <!-- End of Slideshow Script -->
+  <!-- Peek -->
+  <script>
+    'use strict'
+
+    const getNumber = function(str) {
+        return parseInt(str, 10);
+    }
+
+    const transformToString = function(num) {
+        return num + 'px';
+    }
+
+    const SHIFT = 150;   
+    const MARGIN = 10;
+    const element = document.querySelector('.image');
+    const LEFT_MARGIN = getNumber(element.style.left) - SHIFT * MARGIN;
+    const RIGHT_MARGIN = getNumber(element.style.left) + SHIFT * MARGIN;
+
+    const moveLeft = function() {
+        if (getNumber(element.style.left) > LEFT_MARGIN) {
+            element.style.left = transformToString(getNumber(element.style.left) - SHIFT);
+        }
+    }
+
+    const moveRight = function() {
+        if (getNumber(element.style.left) < RIGHT_MARGIN) {
+            element.style.left = transformToString(getNumber(element.style.left) + SHIFT);
+        }
+    }
+    // Cursor
+    
+</script>
+<!-- Cicle--> 
+<script type = "text/javascript">
+  function pic1()
+  {
+      document.getElementById("img").src = "https://static.wixstatic.com/media/188418_8e693b93e7704405a43ef43674b77b4e~mv2.gif";
+  }
+  function pic2()
+  {
+      document.getElementById("img").src ="picture 2 source";
+  } </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+jQuery.fn.shake = function(intShakes, intDistance, intDuration) {
+  
+    intShakes = intShakes || 4;
+    intDistance = intDistance || 2;
+    intDuration = intDuration || 1000;
+  
+    this.each(function() {
+        $(this).css("position","relative"); 
+        for (var x=1; x<=intShakes; x++) {
+        $(this).animate({left:(intDistance*-1)}, (((intDuration/intShakes)/4)))
+    .animate({left:intDistance}, ((intDuration/intShakes)/2))
+    .animate({left:0}, (((intDuration/intShakes)/4)));
+    }
+  });
+return this;
+};
+
+$("#txt2").click(function(){
+
+$(txt).shake();
+
+});
+</script>
+
+<!-- Move Bird -->
+<script >
+
+  function reset1(){
+  clearTimeout(my_time);
+  document.getElementById('i1').style.left= "65%";
+  document.getElementById('i1').style.top= "20%";
+  document.getElementById("msg").innerHTML="";
+  }
+  
+  function disp(){
+  var step=4; // Change this step value
+  //alert("Hello");
+  var y=document.getElementById('i1').offsetTop;
+  var x=document.getElementById('i1').offsetLeft;
+  document.getElementById("msg").innerHTML="X: " + x  + " Y : " + y
+  
+    if(y > 25){
+      //console.log(document.getElementById('i1').style.left);
+      y= y -step;
+      
+      document.getElementById('i1').style.top= y + "px";//horizontal move
+
+  }
+  //////////////////////
+  }
+  
+var birdSong = new Audio();
+    birdSong.src = "birdsong.mp3"
+    function PlayBirdSong() {
+      birdSong.play();
+      timer();
+    }
+
+  function timer(){
+  disp();
+  my_time=setTimeout('timer()',10);
+  }
+  //-->
+  </script>
+
+<!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
+  <!-- New Slideshow -->
+  
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+
+    if(n === 2){
+      document.getElementById("beep1Button").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("beep1Button").style.display="none"
+    }
+
+    if(n === 3){
+      document.getElementById("beep2Button").style.display="inline-block"
+      document.getElementById("croak1Button").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("beep2Button").style.display="none"
+      document.getElementById("croak1Button").style.display="none"
+    }
+
+    if(n === 4){
+      document.getElementById("baaa1Button").style.display="inline-block"
+      document.getElementById("moo1Button").style.display="inline-block"
+      document.getElementById("oink1Button").style.display="inline-block"
+      document.getElementById("beep3Button").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("baaa1Button").style.display="none"
+      document.getElementById("moo1Button").style.display="none"
+      document.getElementById("oink1Button").style.display="none"
+      document.getElementById("beep3Button").style.display="none"
+    }
+
+    if(n === 5){
+      document.getElementById("cluck1Button").style.display="inline-block"
+      document.getElementById("peep1Button").style.display="inline-block"
+      document.getElementById("maaa1Button").style.display="inline-block"
+      document.getElementById("beep4Button").style.display="inline-block"
+      document.getElementById("neigh1Button").style.display="inline-block"
+      document.getElementById("quack1Button").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("cluck1Button").style.display="none"
+      document.getElementById("peep1Button").style.display="none"
+      document.getElementById("maaa1Button").style.display="none"
+      document.getElementById("beep4Button").style.display="none"
+      document.getElementById("neigh1Button").style.display="none"
+      document.getElementById("quack1Button").style.display="none"
+    }
+
+    if(n === 6){
+      document.getElementById("honk1Button").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("honk1Button").style.display="none"
+    }
+
+    if(n === 7){
+      document.getElementById("rooom1Button").style.display="inline-block"
+      document.getElementById("smack1Button").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("rooom1Button").style.display="none"
+      document.getElementById("smack1Button").style.display="none"
+    }
+
+    if(n === 8){
+      document.getElementById("honk2Button").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("honk2Button").style.display="none"
+    }
+
+    if(n === 9){
+      document.getElementById("bump1Button").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("bump1Button").style.display="none"
+    }
+
+    if(n === 10){
+      document.getElementById("beepBeepBeepButton").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("beepBeepBeepButton").style.display="none"
+    }
+
+    if(n === 15){
+      document.getElementById("beep6Button").style.display="inline-block"
+      document.getElementById("allButton").style.display="inline-block"
+      reset1();
+    } else{
+      document.getElementById("beep6Button").style.display="none"
+      document.getElementById("allButton").style.display="none"
+    }
+
+    if(n === 16){
+      document.getElementById("beepBeepBeepButton").style.display="inline-block"
+
+    } else{
+      document.getElementById("beepBeepBeepButton").style.display="none"
+    }
+  }
+  </script>
+
+</html>
